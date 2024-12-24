@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beautiful Calendar with Date Difference Calculator By Anukasif">
+    <meta name="keywords" content="Anukasif-date, Anukasif, Calendar, Date Difference by anukasif, ">
+    <meta name="author" content="Anukasif">
+    <title>Beautiful Calendar</title>
+   <!-- CSS -->
+   <link rel="stylesheet" href="styles.css">
+   
+   <!-- JavaScript -->
+   <script src="script.js" defer></script>
+   
+   <!-- Manifest -->
+   <link rel="manifest" href="manifest.json">
+   
+
+   
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calendar with Date Difference | Anukasif</h1>
+        </header>
+        <section class="current-info">
+            <h4>Current Date: <span id="current-date"></span></h4>
+            <h4>Day: <span id="current-day"></span></h4>
+            <h4>Time: <span id="current-time"></span></h4>
+        </section>
+        <section class="calculator">
+            <h4>Calculate Days Between Dates</h4>
+            <form id="date-form">
+                <div class="input-group">
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" required>
+                </div>
+                <div class="input-group">
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" required>
+                </div>
+                <button type="submit" class="btn">Calculate</button>
+            </form>
+            <div class="result">
+                <h5>Days Difference: <span id="days-difference">0</span></h5>
+            </div>
+        </section>
+    </div>   
+        <br>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>About Us</h2>
+                    <p>We provide comprehensive study materials for BCA students, including notes, MCQs, and modules to help you excel in your studies.</p>
+                </div>
+                <div class="footer-section links">
+                    <h2>Links</h2>
+                    <ul>
+                        <li><a href="https://technap.netlify.app/form/contact-about#about-me">About Me</a></li>
+                        <li><a href="https://technap.netlify.app/form/contact-about#contact-me">Contact Me</a></li>
+                        <li><a href="https://technap.netlify.app/">1st Semester</a></li>
+                        <li><a href="https://technap.netlify.app/#2nd-sem">2nd Semester</a></li>
+                        <li><a href="https://technap.netlify.app/#3rd-sem">3rd Semester</a></li>
+                        <li><a href="https://technap.netlify.app/#4th-sem">4th Semester</a></li>
+                        <li><a href="https://technap.netlify.app/#5th-sem">5th Semester</a></li>
+                        <li><a href="https://technap.netlify.app/#6th-sem">6th Semester</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h2>Follow Us</h2>
+                    <div class="social-links">
+                        <a href="https://whatsapp.com/channel/0029VacDYEk1HsprIgadWg0l" target="_blank" rel="noopener"><img src="icons/whatsapp.png" alt="WhatsApp"></a>
+                        <a href="https://www.instagram.com/tech.nap/" target="_blank" rel="noopener"><img src="icons/instagram.png" alt="Instagram"></a>
+                        <a href="https://t.me/tech_nap" target="_blank" rel="noopener"><img src="icons/telegram.png" alt="Telegram"></a>
+                        <a href="https://youtube.com/@tech_nap" target="_blank" rel="noopener"><img src="icons/youtube.png" alt="YouTube"></a>
+                        <a href="https://www.linkedin.com/in/anukasif/" target="_blank" rel="noopener"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TECH NAP. All rights reserved.</p>
+            </div>
+        </footer>
+        
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
