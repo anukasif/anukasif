@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow"> <!-- Allow Google to index the page -->
+    <meta name="description" content="AppBreeze is the ultimate app store offering a variety of useful and innovative apps for all your needs. Download now for a seamless experience.">
+    <meta name="keywords" content="AppBreeze, App Breeze, app store, download apps, mobile apps, app store online,  best apps, free apps, Android apps">
+    <meta name="author" content="AppBreeze">
+    <meta property="og:title" content="AppBreeze - The Ultimate App Store">
+    <meta property="og:description" content="Discover and download the best apps with AppBreeze. A seamless app store experience with top-rated mobile apps available for all your needs.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=AppBreeze+Logo">
+    <meta property="og:url" content="https://www.appbreeze.com">
+    <title>AppBreeze - The Ultimate App Store: (App Breeze)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Welcome to AppBreeze</h1>
+        <p>Your ultimate app store for all things mobile. Download apps easily and effortlessly!</p>
+    </header>
+
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search for apps..." oninput="searchApps()">
+      <button class="clear-btn" onclick="clearSearch()">✖</button>
+    </div>
+
+
+    <!-- //////////////////////////////////// -->
+    <!-- <div class="app-container" id="appContainer"> -->
+      <!-- App Cards Start -->
+      <!-- <div class="app-card" data-name="calculator">
+          <img src="images/telegram.png" alt="Calculator Icon">
+          <h3>Calculator</h3>
+          <p>A simple and efficient calculator app.</p>
+          <button onclick="openAppDetails('calculator')">View Details</button>
+      </div>
+  
+      <div class="app-card" data-name="weather-app">
+          <img src="https://via.placeholder.com/80x80?text=Weather" alt="Weather App Icon">
+          <h3>Weather App</h3>
+          <p>Check real-time weather updates anytime.</p>
+          <button onclick="openAppDetails('weather-app')">View Details</button>
+      </div>
+  
+      <div class="app-card" data-name="music-player">
+          <img src="https://via.placeholder.com/80x80?text=Music" alt="Music Player Icon">
+          <h3>Music Player</h3>
+          <p>Listen to your favorite songs on the go.</p>
+          <button onclick="openAppDetails('music-player')">View Details</button>
+      </div>
+  </div> -->
+  
+  
+  
+     <!-- //////////////////////////////////////// -->
+
+
+
+
+    <div class="app-container" id="appContainer">
+        <!-- App Cards Start -->
+        <div class="app-card" data-name="Calculator">
+          <img src="images/telegram.png" alt="Calculator Icon">
+          <h3>Calculator</h3>
+          <p>A simple and efficient calculator app.</p>
+          <a href="path/to/calculator.apk" download>
+              <button>Download</button>
+          </a>
+          
+      </div>
+      <div class="app-card" data-name="Weather App">
+          <img src="https://via.placeholder.com/80x80?text=Weather" alt="Weather App Icon">
+          <h3>Weather App</h3>
+          <p>Check real-time weather updates anytime.</p>
+          <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+          
+      </div>
+      
+        <div class="app-card" data-name="Music Player">
+            <img src="https://via.placeholder.com/80x80?text=Music" alt="Music Player Icon">
+            <h3>Music Player</h3>
+            <p>Listen to your favorite songs on the go.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="Photo Editor">
+            <img src="https://via.placeholder.com/80x80?text=Photo" alt="Photo Editor Icon">
+            <h3>Photo Editor</h3>
+            <p>Edit and enhance your photos effortlessly.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="Notes App">
+            <img src="https://via.placeholder.com/80x80?text=Notes" alt="Notes Icon">
+            <h3>Notes App</h3>
+            <p>Take quick notes and stay organized.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="Fitness Tracker">
+            <img src="https://via.placeholder.com/80x80?text=Fit" alt="Fitness Tracker Icon">
+            <h3>Fitness Tracker</h3>
+            <p>Track your fitness and health goals.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="Dictionary">
+            <img src="https://via.placeholder.com/80x80?text=Dict" alt="Dictionary Icon">
+            <h3>Dictionary</h3>
+            <p>Find definitions and meanings quickly.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="Currency Converter">
+            <img src="https://via.placeholder.com/80x80?text=Currency" alt="Currency Converter Icon">
+            <h3>Currency Converter</h3>
+            <p>Convert currencies in real-time.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="Expense Tracker">
+            <img src="https://via.placeholder.com/80x80?text=Expense" alt="Expense Tracker Icon">
+            <h3>Expense Tracker</h3>
+            <p>Manage your expenses and budget easily.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="Meditation App">
+            <img src="https://via.placeholder.com/80x80?text=Meditate" alt="Meditation App Icon">
+            <h3>Meditation App</h3>
+            <p>Relax and meditate for better mental health.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="Travel Guide">
+            <img src="https://via.placeholder.com/80x80?text=Travel" alt="Travel Guide Icon">
+            <h3>Travel Guide</h3>
+            <p>Explore travel destinations and tips.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="Shopping App">
+            <img src="https://via.placeholder.com/80x80?text=Shop" alt="Shopping App Icon">
+            <h3>Shopping App</h3>
+            <p>Shop online with exclusive deals.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="Language Learning">
+            <img src="https://via.placeholder.com/80x80?text=Learn" alt="Language Learning Icon">
+            <h3>Language Learning</h3>
+            <p>Learn new languages with ease.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="Puzzle Game">
+            <img src="https://via.placeholder.com/80x80?text=Puzzle" alt="Puzzle Game Icon">
+            <h3>Puzzle Game</h3>
+            <p>Challenge your brain with fun puzzles.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="News App">
+            <img src="https://via.placeholder.com/80x80?text=News" alt="News App Icon">
+            <h3>News App</h3>
+            <p>Stay updated with the latest news.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="Food Recipes">
+            <img src="https://via.placeholder.com/80x80?text=Food" alt="Food Recipes Icon">
+            <h3>Food Recipes</h3>
+            <p>Cook delicious meals with these recipes.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="To-Do List">
+            <img src="https://via.placeholder.com/80x80?text=Todo" alt="To-Do List Icon">
+            <h3>To-Do List</h3>
+            <p>Organize your tasks and stay productive.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="Stock Market">
+            <img src="https://via.placeholder.com/80x80?text=Stock" alt="Stock Market Icon">
+            <h3>Stock Market</h3>
+            <p>Track stocks and market trends.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="Calendar App">
+            <img src="https://via.placeholder.com/80x80?text=Calendar" alt="Calendar App Icon">
+            <h3>Calendar App</h3>
+            <p>Plan and manage your schedule easily.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <div class="app-card" data-name="E-Book Reader">
+            <img src="https://via.placeholder.com/80x80?text=Books" alt="E-Book Reader Icon">
+            <h3>E-Book Reader</h3>
+            <p>Read your favorite books on the go.</p>
+            <a href="path/to/weather_app.apk" download>
+              <button>Download</button>
+          </a>
+        </div>
+        <!-- App Cards End -->
+    </div>
+   
+
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section about">
+              <h2>ABOUT US - AppBreeze</h2>
+              <p>AppBreeze is your ultimate destination for discovering and downloading top-quality mobile apps. We offer a seamless, user-friendly platform where you can easily find apps that suit your needs, whether for productivity, entertainment, or daily use. Our mission is to make app discovery effortless, safe, and enjoyable for everyone. With a wide selection of trusted apps and regular updates, AppBreeze is dedicated to bringing the best apps right to your fingertips.</p>
+          </div>
+          <div class="footer-section links">
+              <h2>Links</h2>
+              <ul>
+                  <li><a href="https://technap.netlify.app/form/contact-about#about-me">About Me</a></li>
+                  <li><a href="https://technap.netlify.app/form/contact-about#contact-me">Contact Me</a></li>
+                  <li><a href="https://technap.netlify.app/">1st Semester</a></li>
+                  <li><a href="https://technap.netlify.app/#2nd-sem">2nd Semester</a></li>
+                  <li><a href="https://technap.netlify.app/#3rd-sem">3rd Semester</a></li>
+                  <li><a href="https://technap.netlify.app/#4th-sem">4th Semester</a></li>
+                  <li><a href="https://technap.netlify.app/#5th-sem">5th Semester</a></li>
+                  <li><a href="https://technap.netlify.app/#6th-sem">6th Semester</a></li>
+              </ul>
+          </div>
+          <div class="footer-section social">
+              <h2>Follow Us</h2>
+              <div class="social-links">
+                  <a href="https://whatsapp.com/channel/0029VacDYEk1HsprIgadWg0l"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+                  <a href="https://www.instagram.com/tech.nap/"><img src="images/instagram.png" alt="Instagram"></a>
+                  <a href="https://t.me/tech_nap"><img src="images/telegram.png" alt="Telegram"></a>
+                  <a href="https://youtube.com/@tech_nap"><img src="images/youtube.png" alt="YouTube"></a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 TECH NAP. All rights reserved.</p>
+      </div>
+  </footer>
+
+   
+    <script src="script.js"></script>
+
+    <!-- <script>
+      function openAppDetails(appName) {
+          window.location.href = `app-details.html?app=${appName}`;
+      }
+  </script> -->
+</body>
+</html>

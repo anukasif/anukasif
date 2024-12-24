@@ -1,0 +1,295 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #3f51b5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1.2em;
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: center; /* Center the search bar horizontally */
+  margin: 20px 0; /* Add spacing between elements */
+}
+
+.search-bar {
+  position: relative;
+  width: 300px;
+  margin: 10px;
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; /* Add padding for the clear button */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.clear-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #888;
+}
+
+.clear-btn:hover {
+  color: #000; /* Highlight the button on hover */
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 35px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.app-card {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.app-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.app-card h3 {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.app-card p {
+  font-size: 0.8em;
+  color: #555;
+  margin: 5px 0;
+}
+
+.app-card button {
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.app-card button:hover {
+  background-color: #303f9f;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .search-bar {
+    width: 90%;
+  }
+
+  .app-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 0.9em;
+  }
+
+  .search-bar {
+    width: 95%;
+  }
+
+  .app-card {
+    padding: 10px;
+  }
+
+  .app-card h3 {
+    font-size: 1em;
+  }
+
+  .app-card p {
+    font-size: 0.7em;
+  }
+
+  .app-card button {
+    padding: 7px 10px;
+    font-size: 0.8em;
+  }
+}
+
+
+
+/* footer section start ........ */
+footer {
+  background: linear-gradient(to right, #2c3e50, #34495e); /* Stylish gradient background */
+  color: white; /* White text */
+  padding: 40px 0; /* Increased padding for better spacing */
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Stack sections on smaller screens */
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px; /* Space between sections */
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px; /* Ensure minimum width for sections */
+  padding: 10px 20px;
+}
+
+.footer-section h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #ecf0f1; /* Underline headings */
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #ecf0f1;
+  /* text-transform: uppercase; */
+}
+
+.footer-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: #bdc3c7;
+}
+
+.footer-section ul {
+  list-style: none; /* Remove bullets */
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #1abc9c; /* Stylish hover color */
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between icons */
+  margin-top: 20px;
+}
+
+.social-links img {
+  width: 50px; /* Larger size for icons */
+  height: 50px; /* Ensure square icons */
+  border-radius: 50%; /* Rounded icons */
+  border: 2px solid white; /* Add a white border for style */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3); /* Glow effect */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #bdc3c7;
+  padding-top: 10px;
+  border-top: 1px solid #7f8c8d; /* Light border at the top */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column; /* Stack sections */
+      align-items: center; /* Center align sections */
+  }
+
+  .footer-section {
+      text-align: center; /* Center text for smaller screens */
+      padding: 10px;
+  }
+
+  .social-links img {
+      width: 40px; /* Slightly smaller icons for tablets */
+      height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+      gap: 15px; /* Reduced gap for very small screens */
+  }
+
+  .footer-section h2 {
+      font-size: 1.3rem; /* Reduce heading size */
+  }
+
+  .social-links img {
+      width: 35px; /* Smaller icons for phones */
+      height: 35px;
+  }
+
+  .footer-bottom {
+      font-size: 0.8rem; /* Smaller text size */
+  }
+}
