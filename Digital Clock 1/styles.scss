@@ -1,0 +1,131 @@
+*, *::before, *::after {
+  content: "";
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$clock-clr: #b4ffdc;
+$clock-clr2: #595959;
+$clock-clr3: #262626;
+$clock-clr4: black;
+$clock-height: 60px;
+$clock-width: 120px;
+
+body {
+  height: 100vh;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: monospace;
+  color: white;
+  background-color: #fff480;
+  @include center-flex;
+  flex-direction: column;
+}
+
+span {
+  color: $clock-clr3;
+  position: absolute;
+  bottom: 10%;
+}
+
+.clock {
+  &:hover {
+    animation: alarm 0.1s infinite;
+  }
+  height: $clock-height;
+  width: $clock-width;
+  border: 3px solid $clock-clr4;
+  border-radius: 2px;
+  background-color: $clock-clr;
+  @include center-flex;
+  transform: scale(1.5);
+
+  /* side button */
+  &::before {
+    height: $clock-height / 2;
+    width: $clock-height / 9;
+    position: absolute;
+    border-radius: 0 2px 2px 0;
+    transform: translateX($clock-width / 1.9);
+    background-image: repeating-linear-gradient($clock-clr2 0 1%, $clock-clr4 0 1.5%);
+  }
+
+  /* top buttons */
+  &::after {
+    height: $clock-height / 15;
+    width: $clock-height / 2;
+    position: absolute;
+    background-image: linear-gradient(to right, $clock-clr3 0 40%, transparent 0 60%, $clock-clr3 0 100%);
+    transform: translateY(-$clock-height / 1.88) translateX(-$clock-height / 2);
+  }
+}
+
+/* time */
+p {
+  @include center-flex;
+  width: $clock-width / 1.15;
+  border: 5px solid $clock-clr4;
+  border-radius: 2px;
+  padding: 5%;
+  background: linear-gradient(to right, transparent 0 64%, $clock-clr4 0 67%, transparent 0 100%),
+    linear-gradient($clock-clr2 0 50%, $clock-clr3 0 100%);
+
+  /* base */
+  &::before {
+    content: "";
+    position: absolute;
+    height: $clock-height / 9;
+    width: $clock-width / 1.2;
+    background-color: $clock-clr3;
+    transform: translateY($clock-height / 1.8);
+  }
+}
+
+/* animation */
+@keyframes alarm {
+  35% {
+    transform: scale(1.5) rotate(10deg);
+  }
+  65% {
+    transform: scale(1.5) rotate(-10deg);
+  }
+}
+
+/* Responsive Design for different screen sizes */
+@media (max-width: 768px) {
+  body {
+    font-size: 1em;
+  }
+
+  .clock {
+    width: 120px;
+    height: 60px;
+    transform: scale(1.2);
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  .clock {
+    width: 100px;
+    height: 50px;
+    transform: scale(1);
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
