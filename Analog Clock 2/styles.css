@@ -1,0 +1,229 @@
+.clock-container {
+	display: grid;	
+	height: 500px;
+	width: 500px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	background: #B8E1FC;
+	background: radial-gradient(circle farthest-corner at center center, #B8E1FC 0%, #231421 100%);
+	border: 2px solid black;
+	outline: 3px solid springgreen;
+	border-radius: 50%;
+	box-shadow: 15px 15px 5px black;
+	position: relative;
+	margin: auto;
+}
+
+.clock-seconds, .clock-minutes, .clock-hours {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	height: 100%;
+	width: 100%;
+	background-color: transparent;
+	border-radius: 50%;
+	position: absolute;
+	place-items: center;
+}
+
+/* Second Hand */
+.second-hand {
+	width: 0; 
+	height: 0; 
+	border-bottom: 30px solid red; /* Bright color for visibility */
+	border-left: 15px solid transparent; 
+	border-right: 15px solid transparent; 
+	position: relative;
+	top: 10px;
+}
+
+.second-arm {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	height: 380px;
+	width: 10px;
+	background-color: red; /* Matching the second hand */
+	position: relative;
+	bottom: 35px;
+}
+
+/* Minute Hand */
+.minute-hand {
+	width: 0; 
+	height: 0; 
+	border-bottom: 30px solid #007BFF; /* Blue color for minute hand */
+	border-left: 15px solid transparent; 
+	border-right: 15px solid transparent; 
+	position: relative;
+	top: 20px;
+}
+
+.minute-arm {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	height: 310px;
+	width: 10px;
+	background-color: #007BFF; /* Blue color */
+	position: relative;
+	bottom: 70px;
+}
+
+/* Hour Hand */
+.hours-hand {
+	width: 0; 
+	height: 0; 
+	border-bottom: 30px solid #FFD700; /* Gold color for hour hand */
+	border-left: 15px solid transparent; 
+	border-right: 15px solid transparent; 
+	position: relative;
+	top: 10px;
+}
+
+.hours-arm {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	height: 275px;
+	width: 17px;
+	background-color: #FFD700; /* Gold color */
+	position: relative;
+	bottom: 90px;
+}
+
+/* Numbers and Ticks */
+.number {
+	height: 100%;
+	width: 100%;
+	background-color: transparent;
+	border-radius: 50%;
+	font-family: Arial, sans-serif;
+	font-size: 26px;
+	color: white; /* White text color for numbers */
+	text-align: center;
+	position: absolute;
+}
+
+.number-12 {
+	transform: rotate(0deg);
+}
+
+.number-1 {
+	transform: rotate(30deg);
+}
+
+.number-2 {
+	transform: rotate(60deg);
+}
+
+.number-3 {
+	transform: rotate(0deg);
+	top: 234px;
+	left: 236px;
+}
+
+.number-4 {
+	transform: rotate(300deg);
+	top: 235px;
+	left: 407px;
+}
+
+.number-5 {
+	transform: rotate(330deg);
+	top: 407px;
+	left: 234px;
+}
+
+.number-6 {
+	transform: rotate(0deg);
+	top: 471px;
+	left: -1px;
+}
+
+.number-7 {
+	top: 403px;
+	left: -233px;
+	transform: rotate(30deg);
+}
+
+.number-8 {
+	transform: rotate(60deg);
+	top: 235px;
+	left: -407px;
+}
+
+.number-9 {
+	transform: rotate(0deg);
+	top: 234px;
+	left: -236px;
+}
+
+.number-10 {
+	transform: rotate(300deg);
+}
+
+.number-11 {
+	transform: rotate(330deg);
+}
+
+.tick {
+	height: 100%;
+	width: 100%;
+	background-color: transparent;
+	border-radius: 50%;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	color: white; /* White color for ticks */
+	position: absolute;
+	text-align: center;
+}
+.tick-1 { transform: rotate(6deg); }
+.tick-2 { transform: rotate(12deg); }
+.tick-3 { transform: rotate(18deg); }
+.tick-4 { transform: rotate(24deg); }
+.tick-5 { transform: rotate(36deg); }
+.tick-6 { transform: rotate(42deg); }
+.tick-7 { transform: rotate(48deg); }
+.tick-8 { transform: rotate(54deg); }
+.tick-9 { transform: rotate(66deg); }
+.tick-10 { transform: rotate(72deg); }
+.tick-11 { transform: rotate(78deg); }
+.tick-12 { transform: rotate(84deg); }
+.tick-13 { transform: rotate(96deg); }
+.tick-14 { transform: rotate(102deg); }
+.tick-15 { transform: rotate(108deg); }
+.tick-16 { transform: rotate(114deg); }
+.tick-17 { transform: rotate(126deg); }
+.tick-18 { transform: rotate(132deg); }
+.tick-19 { transform: rotate(138deg); }
+.tick-20 { transform: rotate(144deg); }
+.tick-21 { transform: rotate(156deg); }
+.tick-22 { transform: rotate(162deg); }
+.tick-23 { transform: rotate(168deg); }
+.tick-24 { transform: rotate(174deg); }
+.tick-25 { transform: rotate(186deg); }
+.tick-26 { transform: rotate(192deg); }
+.tick-27 { transform: rotate(198deg); }
+.tick-28 { transform: rotate(204deg); }
+.tick-29 { transform: rotate(216deg); }
+.tick-30 { transform: rotate(222deg); }
+.tick-31 { transform: rotate(228deg); }
+.tick-32 { transform: rotate(234deg); }
+.tick-33 { transform: rotate(246deg); }
+.tick-34 { transform: rotate(252deg); }
+.tick-35 { transform: rotate(258deg); }
+.tick-36 { transform: rotate(264deg); }
+.tick-37 { transform: rotate(276deg); }
+.tick-38 { transform: rotate(282deg); }
+.tick-39 { transform: rotate(288deg); }
+.tick-40 { transform: rotate(294deg); }
+.tick-41 { transform: rotate(306deg); }
+.tick-42 { transform: rotate(312deg); }
+.tick-43 { transform: rotate(318deg); }
+.tick-44 { transform: rotate(324deg); }
+.tick-45 { transform: rotate(336deg); }
+.tick-46 { transform: rotate(342deg); }
+.tick-47 { transform: rotate(348deg); }
+.tick-48 { transform: rotate(354deg); }
+
